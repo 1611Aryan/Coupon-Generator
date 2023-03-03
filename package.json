@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "Coupon-Generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc  ",
+    "copyStatic": "cp -r src/coupon dist",
+    "start": "pnpm build && pnpm copyStatic && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.5",
+    "typescript": "^4.9.5"
+  }
+}
